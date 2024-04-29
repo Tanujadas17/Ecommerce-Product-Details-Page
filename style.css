@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: linear-gradient(#edf2f3 0%, #d7dde9 100%);
+    border-bottom: 3.5px solid black;
+    
+}
+nav .logo{
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+nav ul i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 72px auto;
+}
+.left{
+    width: 40%;
+}
+.big-img{
+    width: 350px;
+}
+.big-img img{
+    width: inherit;
+    border: 1.5px solid black;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+}
+.small-img{
+    width: 97px;
+    overflow: hidden;
+    border: 1.5px solid black;
+}
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img{
+    transform: scale(1.2);
+}
+.url{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(6, 6, 6);
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.ratings i{
+    color: rgb(255, 136, 0);
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.color{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.color p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.pcolor{
+    width: 60px;
+    border: 14.5px solid #f5e3bd;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.pcolor.active{
+    border-width: 14.5px;
+    color: #bde9f5;
+    font-weight: 500;
+    border-radius: 6px;
+
+}
+.ccolor{
+    width: 60px;
+    border: 14.5px solid #f5bdf5;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-width: 14.5px;
+    color: #f5bdf5;
+    font-weight: 500;
+    border-radius: 6px;
+}
+.bcolor{
+    width: 60px;
+    border: 14.5px solid #bdd2f5;;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-width: 14.5px;
+    color: #e2f5bd;
+    font-weight: 500;
+    border-radius: 6px;
+}
+.acolor{
+    width: 60px;
+    border: 14.5px solid #bdf5c6;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-width: 14.5px;
+    color: #bdf5c6;
+    font-weight: 500;
+    border-radius: 6px;
+    
+}
+.quantity{
+    display: flex;
+    font-size: 10px;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display: flex;
+    margin-top: 20px;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 17px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    width: 400px;
+}
+.cart-btn{
+    background-color: #a94610;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: #1577a5;
+}
+.cart-btn:hover{
+    background-color: #793737;
+}
+.buy-btn:hover{
+    background-color: #244569;
+}
+
+form {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Style for the search input */
+  input[type="text"] {
+    padding: 8px 12px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  /* Style for the search button */
+  button[type="submit"] {
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #414242; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Hover effect for the search button */
+  button[type="submit"]:hover {
+    background-color: #6b6c6c; /* Darker background color */
+  }
+  
+  /* Optional: Center the search bar horizontally */
+  .container {
+    text-align: center;
+  }
+  
+
+
+
